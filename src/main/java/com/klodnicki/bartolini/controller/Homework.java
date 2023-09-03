@@ -17,11 +17,19 @@ public class Homework {
     String text3;
 
     @GetMapping("/homework")
-
     public String homeworkGreeting(Model model) {
         model.addAttribute("text1", text1);
         model.addAttribute("text2", text2);
         model.addAttribute("text3", text3);
+
+        model.addAttribute("thisPutToHtml1", "Kolumna name");
+        model.addAttribute("thisPutToHtml2", "Kolumna telefon");
+        model.addAttribute("thisPutToHtml3", "Kolumna miasto");
+
+        model.addAttribute("thisPutToHtml4", "Janek");
+        model.addAttribute("thisPutToHtml5", "997");
+        model.addAttribute("thisPutToHtml6", "Szczebrzeszyn");
+
         return "homework";
     }
 }
