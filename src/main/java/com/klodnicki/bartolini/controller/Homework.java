@@ -29,6 +29,13 @@ public class Homework {
         model.addAttribute("thisPutToHtml4", "Janek");
         model.addAttribute("thisPutToHtml5", "997");
         model.addAttribute("thisPutToHtml6", "Szczebrzeszyn");
+para
+        model.addAttribute("listParam1", "Coffee");
+        model.addAttribute("listParam2", "Tea");
+        model.addAttribute("listParam3", "Milk");
+        model.addAttribute("listParam4", "Chips");
+        model.addAttribute("listParam5", "Alcohol");
+        model.addAttribute("listParam6", "Lollipop");
 
         return "homework";
     }
