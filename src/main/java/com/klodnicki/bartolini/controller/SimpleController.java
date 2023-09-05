@@ -17,4 +17,10 @@ public class SimpleController {
         model.addAttribute("myName", myName);
         return "home";
     }
+
+    @GetMapping("/")
+    public String index(Model model) {
+        return "index";
+
+    }
 }
