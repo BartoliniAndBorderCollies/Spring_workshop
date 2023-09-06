@@ -14,13 +14,19 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http.authorizeRequests()
+//                .anyRequest()
+//                .permitAll()
+//                .and()
+//                .build();
+
+//                .requestMatchers("/", "/home", "/homework")
+//                .permitAll();
+
+//                .requestMatchers(HttpMethod.GET, "/", "/home")
+//                .permitAll();
 
                 .requestMatchers("/admin/**")
                 .authenticated()
-
-
-//                .anyRequest()
-
 
                 .and()
                 .build();
