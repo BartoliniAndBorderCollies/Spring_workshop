@@ -40,6 +40,9 @@ public class Homework {
         model.addAttribute("listParam5", "Alcohol");
         model.addAttribute("listParam6", "Lollipop");
 
+        boolean print = true;
+        model.addAttribute("print", print);
+
         List<String> clothes = Arrays.asList("bra", "jeans", "sweater", "underwear", "shirt", "akaka");
         model.addAttribute("clothes", clothes);
 
