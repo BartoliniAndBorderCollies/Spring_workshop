@@ -5,87 +5,87 @@
     <title>This is a title of my magnificent homework</title>
   <h1> This is my lovely homework written with thymeleaf.</h1>
 
-    <h2>Part 1. Strings taken straight from Spring Boot. From properties using values.</h2>
-
-    <p>This is: <span th:text="${text1}"></span> </p>
-    <p>I am trying to <span th:text="${text2}"></span> </p>
-    <p> I am sooo happy that <span th:text="${text3}"></span></p>
-
-    <h2>Part 2. Put a table into html</h2>
-
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Phone Number</th>
-            <th>City</th>
-        </tr>
-        <tr>
-            <td>John</td>
-            <td>25</td>
-            <td>123 432 432</td>
-            <td>Warsaw</td>
-        </tr>
-        <tr>
-            <td>Jane</td>
-            <td>23</td>
-            <td>123 00 122</td>
-            <td>Philadelphia</td>
-        </tr>
-    </table>
-
-    <h2>Part 3. Put a table into html, take data using thymeleaf</h2>
-
-    <table>
-        <tr>
-            <th>Name: <span th:text="${thisPutToHtml1}"></span> </th>
-            <th>Phone: <span th:text="${thisPutToHtml2}"></span> </th>
-            <th>City: <span th:text="${thisPutToHtml3}"></span> </th>
-        </tr>
-        <tr>
-            <td><span th:text="${thisPutToHtml4}"></span></td>
-            <td><span th:text="${thisPutToHtml5}"></span></td>
-            <td><span th:text="${thisPutToHtml6}"></span></td>
-        </tr>
-    </table>
-
-    <h2>Part 4. Create two lists in html</h2>
-
-    <p>Unordered list: </p>
-
-    <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-        <li>Chips</li>
-        <li>Alcohol</li>
-        <li>Lollipop</li>
-    </ul>
-
-    <p>Ordered list: </p>
-
-    <ol>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-        <li>Chips</li>
-        <li>Alcohol</li>
-        <li>Lollipop</li>
-    </ol>
-
-    <p>Passing params from java to html: </p>
-
-    <ul>
-        <li><span th:text="${listParam1}"></span></li>
-        <li><span th:text="${listParam2}"></span></li>
-        <li><span th:text="${listParam3}"></span></li>
-        <li><span th:text="${listParam4}"></span></li>
-        <li><span th:text="${listParam5}"></span></li>
-        <li><span th:text="${listParam6}"></span></li>
-    </ul>
 
 </head>
 <body>
+<h2>Part 1. Strings taken straight from Spring Boot. From properties using values.</h2>
+
+<p>This is: <span th:text="${text1}"></span> </p>
+<p>I am trying to <span th:text="${text2}"></span> </p>
+<p> I am sooo happy that <span th:text="${text3}"></span></p>
+
+<h2>Part 2. Put a table into html</h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Phone Number</th>
+        <th>City</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>25</td>
+        <td>123 432 432</td>
+        <td>Warsaw</td>
+    </tr>
+    <tr>
+        <td>Jane</td>
+        <td>23</td>
+        <td>123 00 122</td>
+        <td>Philadelphia</td>
+    </tr>
+</table>
+
+<h2>Part 3. Put a table into html, take data using thymeleaf</h2>
+
+<table>
+    <tr>
+        <th>Name: <span th:text="${thisPutToHtml1}"></span> </th>
+        <th>Phone: <span th:text="${thisPutToHtml2}"></span> </th>
+        <th>City: <span th:text="${thisPutToHtml3}"></span> </th>
+    </tr>
+    <tr>
+        <td><span th:text="${thisPutToHtml4}"></span></td>
+        <td><span th:text="${thisPutToHtml5}"></span></td>
+        <td><span th:text="${thisPutToHtml6}"></span></td>
+    </tr>
+</table>
+
+<h2>Part 4. Create two lists in html</h2>
+
+<p>Unordered list: </p>
+
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+    <li>Chips</li>
+    <li>Alcohol</li>
+    <li>Lollipop</li>
+</ul>
+
+<p>Ordered list: </p>
+
+<ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+    <li>Chips</li>
+    <li>Alcohol</li>
+    <li>Lollipop</li>
+</ol>
+
+<p>Passing params from java to html: </p>
+
+<ul>
+    <li><span th:text="${listParam1}"></span></li>
+    <li><span th:text="${listParam2}"></span></li>
+    <li><span th:text="${listParam3}"></span></li>
+    <li><span th:text="${listParam4}"></span></li>
+    <li><span th:text="${listParam5}"></span></li>
+    <li><span th:text="${listParam6}"></span></li>
+</ul>
 
 </body>
 </html>
