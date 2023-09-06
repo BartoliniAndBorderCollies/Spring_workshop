@@ -1,6 +1,7 @@
 package com.klodnicki.bartolini.controller;
 
 
+import com.klodnicki.bartolini.Person;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -46,6 +47,8 @@ public class Homework {
         List<String> clothes = Arrays.asList("bra", "jeans", "sweater", "underwear", "shirt", "akaka");
         model.addAttribute("clothes", clothes);
 
+        Person person = new Person("Lola", 23);
+        model.addAttribute("person", person);
 
 
         return "homework";
