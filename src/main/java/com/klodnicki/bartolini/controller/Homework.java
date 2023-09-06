@@ -6,6 +6,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.util.Arrays;
+import java.util.List;
+
 @Controller
 public class Homework {
 
@@ -36,6 +39,11 @@ public class Homework {
         model.addAttribute("listParam4", "Chips");
         model.addAttribute("listParam5", "Alcohol");
         model.addAttribute("listParam6", "Lollipop");
+
+        List<String> clothes = Arrays.asList("bra", "jeans", "sweater", "underwear", "shirt", "akaka");
+        model.addAttribute("clothes", clothes);
+
+
 
         return "homework";
     }
