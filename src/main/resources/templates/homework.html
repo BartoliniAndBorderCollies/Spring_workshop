@@ -94,6 +94,13 @@
 
 <p th:if="${true}">This is visible because condition is TRUE</p>
 
+<h2>Part 6. Iteration using thymeleaf</h2>
+
+<tr th:each="cloth: ${clothes}">
+    <td th:text="${cloth}"></td>
+</tr>
+
+
 
 </body>
 </html>
